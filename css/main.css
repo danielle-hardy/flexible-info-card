@@ -4,24 +4,30 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   background-color: #ccc;
+  justify-content: center;
 }
 
 h1 {
   color: #000;
-  font-style: bold;
   text-align: center;
 }
 
 ul > li {
   display: flex;
   align-items: flex-start;
+  margin-left: 1.5rem;
 }
 
 img {
   max-width: 5rem;
+  margin-right: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -31,4 +37,7 @@ a {
   text-decoration: none;
   padding: .5rem 1rem .6rem;
   font-size: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  align-items: flex-end;
 }
